@@ -8,7 +8,7 @@ const port = 5000;
 
 app.use(
   cors({
-    origin: "https://mynotebook-frontend.vercel.app",
+    origin: "https://mynotebook-frontend.vercel.app/",
   })
 );
 app.use(express.json());
