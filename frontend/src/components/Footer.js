@@ -10,14 +10,14 @@ const Footer = () => {
     >
       <p>&copy; {currentYear} <strong>MyNotebook</strong>. All rights reserved.</p>
 
-      <a href="https://www.linkedin.com/in/kenil-ghelani-985441260/">
+      <a href="https://www.linkedin.com/in/kenil-ghelani-985441260/" target="_blank">
         <i
           className="fa-brands fa-linkedin mx-2"
           style={{ color: "white", fontSize: "25px" }}
         ></i>
       </a>
 
-      <a href="https://github.com/KenilGhelani">
+      <a href="https://github.com/KenilGhelani" target="_blank">
         <i
           className="fa-brands fa-github mx-2"
           style={{ color: "white", fontSize: "25px" }}

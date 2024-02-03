@@ -7,10 +7,10 @@ const About = () => {
       <h1 className="text-center mb-4 text-decoration-underline">
         <strong>About Us</strong>
       </h1>
-      .
+      
       <div
-        class="card m-auto my-3 rounded-4"
-        style={{ maxWidth: "58rem", backgroundColor: "#b9b2b2" }}
+        class="card m-auto my-3 rounded-4 mx-3"
+        style={{ maxWidth: "58rem", maxHeight: "auto", backgroundColor: "#b9b2b2" }}
       >
         <div class="card-body">
           <h5 class="card-title text-decoration-underline mb-4">
@@ -45,8 +45,8 @@ const About = () => {
         </div>
       </div>
       <div
-        class="card m-auto my-3 rounded-4"
-        style={{ maxWidth: "58rem", backgroundColor: "#b9b2b2" }}
+        class="card m-auto my-3 rounded-4 mx-3"
+        style={{ maxWidth: "58rem", maxHeight: "auto", backgroundColor: "#b9b2b2" }}
       >
         <div class="card-body">
           <h5 class="card-title text-decoration-underline mb-3">

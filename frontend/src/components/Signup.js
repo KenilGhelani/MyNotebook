@@ -53,7 +53,7 @@ const Signup = (props) => {
       <h2 className="my-2 text-center">SignUp</h2>
       <hr />
       <form onSubmit={handleSubmit}>
-        <div className="my-4">
+        <div className="my-4 mx-2">
           <label htmlFor="name" className="form-label">
           <h5>Name</h5>
           </label>
@@ -112,7 +112,7 @@ const Signup = (props) => {
           />
         </div>
         <div className="text-center">
-          <button type="submit" className="btn btn-dark  m-auto my-2">
+          <button type="submit" className="btn btn-dark  m-auto mb-4">
             Submit
           </button>
         </div>
