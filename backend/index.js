@@ -6,14 +6,7 @@ connectToMongo();
 const app = express();
 const port = 5000;
 
-const allowedOrigins = ['http://localhost:3000'];
-
-app.use(cors({
-  origin: allowedOrigins,
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true, // enable credentials (cookies, headers)
-  optionsSuccessStatus: 204, // some legacy browsers (IE11, various SmartTVs) choke on 204
-}));
+app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
