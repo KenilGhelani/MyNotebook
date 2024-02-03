@@ -43,7 +43,7 @@ const Signup = (props) => {
   };
 
   return (
-    <div className="container pt-1 rounded-4" style={{width: "450px", height: "560px" , backgroundColor: "#b9b2b2"}}>
+    <div className="container pt-1 rounded-4" style={{maxWidth: "450px", maxHeight: "auto" , backgroundColor: "#b9b2b2"}}>
       <h2 className="my-2 text-center">SignUp</h2>
       <hr />
       <form onSubmit={handleSubmit}>

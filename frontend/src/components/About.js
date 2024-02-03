@@ -10,7 +10,7 @@ const About = () => {
       .
       <div
         class="card m-auto my-3 rounded-4"
-        style={{ width: "58rem", backgroundColor: "#b9b2b2" }}
+        style={{ maxWidth: "58rem", backgroundColor: "#b9b2b2" }}
       >
         <div class="card-body">
           <h5 class="card-title text-decoration-underline mb-4">
@@ -46,7 +46,7 @@ const About = () => {
       </div>
       <div
         class="card m-auto my-3 rounded-4"
-        style={{ width: "58rem", backgroundColor: "#b9b2b2" }}
+        style={{ maxWidth: "58rem", backgroundColor: "#b9b2b2" }}
       >
         <div class="card-body">
           <h5 class="card-title text-decoration-underline mb-3">

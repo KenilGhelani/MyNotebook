@@ -40,7 +40,7 @@ const Login = (props) => {
   return (
     <div
       className="container pt-4 rounded-4"
-      style={{ width: "380px", height: "380px", backgroundColor: "#b9b2b2" }}
+      style={{ maxWidth: "380px", maxHeight: "auto", backgroundColor: "#b9b2b2" }}
     >
       <h2 className="mb-1 text-center">Login to Notebook</h2>
       <hr />
