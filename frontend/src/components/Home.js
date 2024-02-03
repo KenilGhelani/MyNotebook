@@ -7,8 +7,7 @@ const Home = (props) => {
     <div>
       {/* <AddNotes/> */}
       <Notes showAlert={props.showAlert} />
-              <Footer />
-      
+      <Footer />
     </div>
   );
 };

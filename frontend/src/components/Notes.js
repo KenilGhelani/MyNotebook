@@ -51,7 +51,7 @@ const Notes = (props) => {
   };
 
   return (
-    <div className="container" style={{ maxWidth: "auto", maxHeight: "auto" }}>
+    <div className="container" style={{ maxWidth: "auto"}}>
       <div className="">
         <AddNotes showAlert={props.showAlert} />
       </div>
