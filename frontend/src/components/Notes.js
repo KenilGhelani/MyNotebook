@@ -54,7 +54,7 @@ const Notes = (props) => {
   };
 
   return (
-    <div className="d-flex">
+    <div className="d-flex container justify-content-around">
       <div className="p-2 flex-fill">
         <AddNotes showAlert={props.showAlert}/>
         </div>
