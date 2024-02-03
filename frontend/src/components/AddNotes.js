@@ -20,8 +20,8 @@ const AddNotes = (props) => {
   };
 
   return (
-    <div className="d-flex justify-content-start">
-      <div className="my-3 py-4 px-4 rounded-4" style={{ maxWidth: "500px", maxHeight: "auto", backgroundColor: "#b9b2b2" }}>
+    <div>
+      <div className="my-3 py-4 px-4 rounded-4 mx-auto" style={{ maxWidth: "500px", maxHeight: "auto", backgroundColor: "#b9b2b2" }}>
         <h2 className="mt-2 pb-2 text-center"><strong>Add Your Notes</strong></h2>
         <hr />
         <form className="my-3">

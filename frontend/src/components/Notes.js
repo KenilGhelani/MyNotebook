@@ -11,14 +11,11 @@ const Notes = (props) => {
   let navigate = useNavigate();
 
   useEffect(() => {
-    if(localStorage.getItem('Token'))
-    {
+    if (localStorage.getItem("Token")) {
       getnotes();
-    }
-    else{
+    } else {
       navigate("/login");
     }
-    
   }, []);
 
   const updateNote = (currentNote) => {
@@ -54,11 +51,11 @@ const Notes = (props) => {
   };
 
   return (
-    <div className="d-flex container justify-content-around">
-      <div className="p-2 flex-fill">
-        <AddNotes showAlert={props.showAlert}/>
-        </div>
-      
+    <div className="container" style={{ maxWidth: "auto", maxHeight: "auto" }}>
+      <div className="">
+        <AddNotes showAlert={props.showAlert} />
+      </div>
+
       <button
         type="button"
         className="btn btn-primary d-none"
@@ -77,10 +74,12 @@ const Notes = (props) => {
         aria-hidden="true"
       >
         <div className="modal-dialog">
-          <div className="modal-content" style={{backgroundColor: "#b9b2b2"}}>
+          <div className="modal-content" style={{ backgroundColor: "#b9b2b2" }}>
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="exampleModalLabel">
-                <h3><strong>Edit Notes</strong></h3>
+                <h3>
+                  <strong>Edit Notes</strong>
+                </h3>
               </h1>
               <button
                 type="button"
@@ -144,7 +143,11 @@ const Notes = (props) => {
                 Close
               </button>
               <button
-                disabled={note.etitle.length<5 || note.edescription.length<5 || note.etag.length<5}
+                disabled={
+                  note.etitle.length < 5 ||
+                  note.edescription.length < 5 ||
+                  note.etag.length < 5
+                }
                 type="button"
                 className="btn btn-dark"
                 onClick={handleClick}
@@ -155,13 +158,24 @@ const Notes = (props) => {
           </div>
         </div>
       </div>
-      <div className="p-2 flex-fill my-3">
-        <h2 className="mb-5 text-decoration-underline text-center" style={{color: "black"}}><strong>Your Notes</strong></h2>
+      <div className="row my-5">
+        <h2
+          className="mb-5  text-decoration-underline text-center"
+          style={{ maxWidth: "auto", maxHeight: "auto", color: "black" }}
+        >
+          <strong>Your Notes</strong>
+        </h2>
         <div className="container text-center">
           {notes.length === 0 && <h5>No notes to display</h5>}
         </div>
         {notes.map((note) => {
-          return <NoteItem updateNote={updateNote} note={note} showAlert={props.showAlert} />;
+          return (
+            <NoteItem
+              updateNote={updateNote}
+              note={note}
+              showAlert={props.showAlert}
+            />
+          );
         })}
       </div>
     </div>
