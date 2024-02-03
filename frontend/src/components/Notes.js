@@ -160,7 +160,7 @@ const Notes = (props) => {
       </div>
       <div className="row my-5">
         <h2
-          className="mb-5  text-decoration-underline text-center"
+          className="mb-3  text-decoration-underline text-center"
           style={{ maxWidth: "auto", maxHeight: "auto", color: "black" }}
         >
           <strong>Your Notes</strong>

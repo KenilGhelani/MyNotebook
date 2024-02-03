@@ -38,6 +38,7 @@ const Login = (props) => {
     setCredential({ ...credential, [e.target.name]: e.target.value });
   };
   return (
+    <div className="px-2" style={{maxWidth: "auto"}}>
     <div
       className="m-auto pt-4 rounded-4"
       style={{ maxWidth: "380px", maxHeight: "auto", backgroundColor: "#b9b2b2" }}
@@ -78,6 +79,7 @@ const Login = (props) => {
           </button>
         </div>
       </form>
+    </div>
     </div>
   );
 };

@@ -4,12 +4,13 @@ import Footer from "./Footer";
 const About = () => {
   return (
     <div>
+    <div className="mx-auto px-2">
       <h1 className="text-center mb-4 text-decoration-underline">
         <strong>About Us</strong>
       </h1>
       
       <div
-        class="card m-auto my-3 rounded-4 mx-3"
+        class="card m-auto my-3 rounded-4"
         style={{ maxWidth: "58rem", maxHeight: "auto", backgroundColor: "#b9b2b2" }}
       >
         <div class="card-body">
@@ -45,7 +46,7 @@ const About = () => {
         </div>
       </div>
       <div
-        class="card m-auto my-3 rounded-4 mx-3"
+        class="card m-auto my-3 rounded-4"
         style={{ maxWidth: "58rem", maxHeight: "auto", backgroundColor: "#b9b2b2" }}
       >
         <div class="card-body">
@@ -165,6 +166,7 @@ const About = () => {
             </h6>
           </p>
         </div>
+      </div>
       </div>
       <Footer />
     </div>
