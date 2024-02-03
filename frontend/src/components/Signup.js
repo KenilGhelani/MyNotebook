@@ -11,7 +11,11 @@ const Signup = (props) => {
   let navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (user.password===user.cpassword) {
+    if (user.password!==user.cpassword) {
+      props.showAlert("Your password & Confirm password is not same", "danger")
+    }
+    else{
+      
       const response = await fetch("https://mynotebook-backend.vercel.app/api/auth/createuser", {
       method: "POST",
       headers: {
@@ -36,9 +40,6 @@ const Signup = (props) => {
     else{
       props.showAlert('Please Enter New Email Address..!!', 'danger');
     }
-    }
-    else{
-      props.showAlert("Enter the valid password", "danger");
     }
     }
     
