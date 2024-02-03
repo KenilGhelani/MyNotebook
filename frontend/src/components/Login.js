@@ -39,13 +39,13 @@ const Login = (props) => {
   };
   return (
     <div
-      className="container pt-4 rounded-4"
+      className="m-auto pt-4 rounded-4"
       style={{ maxWidth: "380px", maxHeight: "auto", backgroundColor: "#b9b2b2" }}
     >
       <h2 className="mb-1 text-center">Login to Notebook</h2>
       <hr />
       <form onSubmit={handleSubmit}>
-        <div className="my-4">
+        <div className="my-4 mx-2">
           <label htmlFor="email" className="form-label">
             <h5>Email address</h5>
           </label>
@@ -59,7 +59,7 @@ const Login = (props) => {
             aria-describedby="emailHelp"
           />
         </div>
-        <div className="my-3">
+        <div className="my-3 mx-2">
           <label htmlFor="password" className="form-label">
             <h5>Password</h5>
           </label>
@@ -70,7 +70,7 @@ const Login = (props) => {
             name="password"
             value={credential.password}
             onChange={onChange}
-          />
+/>
         </div>
         <div className="text-center">
           <button type="submit" className="btn btn-dark my-3  m-auto">

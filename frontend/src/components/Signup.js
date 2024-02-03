@@ -49,7 +49,7 @@ const Signup = (props) => {
   };
 
   return (
-    <div className="container pt-1 rounded-4" style={{maxWidth: "450px", maxHeight: "auto" , backgroundColor: "#b9b2b2"}}>
+    <div className="mx-auto pt-1 rounded-4" style={{maxWidth: "400px", maxHeight: "auto" , backgroundColor: "#b9b2b2"}}>
       <h2 className="my-2 text-center">SignUp</h2>
       <hr />
       <form onSubmit={handleSubmit}>
@@ -81,7 +81,7 @@ const Signup = (props) => {
             // value={user.email}
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-3 mx-2">
           <label htmlFor="password" className="form-label">
           <h5>Password</h5>
           </label>
@@ -96,7 +96,7 @@ const Signup = (props) => {
             value={user.password}
           />
         </div>
-        <div className="mb-2">
+        <div className="mb-2 mx-2">
           <label htmlFor="cpassword" className="form-label">
           <h5>Confirm Password</h5>
           </label>
