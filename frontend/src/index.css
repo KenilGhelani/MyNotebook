@@ -6,6 +6,7 @@ body {
   background-attachment: fixed;
   background-origin: border-box;
   background-position: top right;
+  background-clip: border-box;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
