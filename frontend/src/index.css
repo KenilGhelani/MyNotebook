@@ -31,7 +31,7 @@ body::before {
 @media only screen and (max-width: 600px) {
   body {
     overflow-y: scroll;
-      background-attachment: fixed  ; /* Override fixed attachment for small screens */
+      background-attachment: scroll  ; /* Override fixed attachment for small screens */
       background-image: url('./notebook-background-texture-w2bqz0cxkygdfjjs.jpg');
   }
 }
