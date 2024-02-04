@@ -14,7 +14,7 @@ const Alert = (props) => {
       <div>
         {props.alert && (
           <div
-            className={`alert alert-${props.alert.type} alert-dismissible fade show fixed-top`}
+            className={`alert alert-${props.alert.type} alert-dismissible fade show`}
             role="alert"
             style={{top: "56px" , height: "60px"}}
           >
