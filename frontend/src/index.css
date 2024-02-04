@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-image: url('./notebook-background-texture-w2bqz0cxkygdfjjs.jpg');
+  height: 100vh;
   overflow-y: hidden;
   background-size: cover;
   background-attachment: fixed;
