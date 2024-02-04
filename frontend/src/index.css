@@ -1,25 +1,20 @@
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("./notebook-background-texture-w2bqz0cxkygdfjjs.jpg");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('./notebook-background-texture-w2bqz0cxkygdfjjs.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity: 0.7; /* Adjust the opacity value as needed (0 to 1) */
-  z-index: -1;
 }
 
+/* Optional: Add media queries to adjust styles for smaller screens */
 @media only screen and (max-width: 600px) {
-  /* Apply a different background or styles for smaller screens if needed */
   body {
       background-attachment: scroll; /* Override fixed attachment for small screens */
       background-image: url('./notebook-background-texture-w2bqz0cxkygdfjjs.jpg');
   }
 }
+
 
 .container {
   width: 90%; /* Use percentage instead of fixed pixels */
