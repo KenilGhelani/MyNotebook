@@ -101,6 +101,7 @@ const Notes = (props) => {
                     name="etitle"
                     aria-describedby="emailHelp"
                     onChange={onChange}
+                    value={note.etitle}
                     minLength={5}
                     required
                   />
@@ -116,6 +117,7 @@ const Notes = (props) => {
                     name="edescription"
                     onChange={onChange}
                     minLength={5}
+                    value={note.edescription}
                     required
                   />
                 </div>
@@ -129,6 +131,7 @@ const Notes = (props) => {
                     id="etag"
                     name="etag"
                     onChange={onChange}
+                    value={note.etag}
                   />
                 </div>
               </form>
