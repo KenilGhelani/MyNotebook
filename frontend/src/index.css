@@ -1,20 +1,36 @@
 body {
-  height: 100%;
+  position: relative;
+  /* background-image: url("/w1.png");
+  background-size: cover; */
+  height: 100vh;
+  /* background-repeat: no-repeat;
+  background-attachment: fixed; */
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-image: url('./notebook-background-texture-w2bqz0cxkygdfjjs.jpg');
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./notebook-background-texture-w2bqz0cxkygdfjjs.jpg");
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.8; /* Adjust the opacity value as needed (0 to 1) */
+  z-index: -1;
 }
 
 /* Optional: Add media queries to adjust styles for smaller screens */
 @media only screen and (max-width: 600px) {
   body {
-    overflow: auto;
-    scroll-behavior: smooth;
-      background-attachment: fixed  ; /* Override fixed attachment for small screens */
+      background-attachment: scroll  ; /* Override fixed attachment for small screens */
       background-image: url('./notebook-background-texture-w2bqz0cxkygdfjjs.jpg');
   }
 }
