@@ -1,5 +1,5 @@
 body {
-  max-height: 100vh;
+  max-height: auto;
   background-image: url("./notebook-background-texture-w2bqz0cxkygdfjjs.jpg");
   background-size: cover; 
   background-repeat: no-repeat;
@@ -13,6 +13,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 768px) {
+  body {
+      background-image: url('./notebook-background-texture-w2bqz0cxkygdfjjs.jpg');
+  }
+}
+
+.container {
+  width: 90%; /* Use percentage instead of fixed pixels */
+  margin: 0 auto; /* Center the container */
 }
 
 code {
