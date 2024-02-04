@@ -5,12 +5,13 @@ body {
   background-image: url('./notebook-background-texture-w2bqz0cxkygdfjjs.jpg');
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 /* Optional: Add media queries to adjust styles for smaller screens */
 @media only screen and (max-width: 600px) {
   body {
-      background-attachment: scroll; /* Override fixed attachment for small screens */
+      background-attachment: fixed  ; /* Override fixed attachment for small screens */
       background-image: url('./notebook-background-texture-w2bqz0cxkygdfjjs.jpg');
   }
 }
