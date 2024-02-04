@@ -4,7 +4,6 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-image: url('./notebook-background-texture-w2bqz0cxkygdfjjs.jpg');
-  overflow-y: hidden;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -13,12 +12,12 @@ body {
 /* Optional: Add media queries to adjust styles for smaller screens */
 @media only screen and (max-width: 600px) {
   body {
-    overflow-y: scroll;
+    overflow: auto;
+    scroll-behavior: smooth;
       background-attachment: fixed  ; /* Override fixed attachment for small screens */
       background-image: url('./notebook-background-texture-w2bqz0cxkygdfjjs.jpg');
   }
 }
-
 
 .container {
   width: 90%; /* Use percentage instead of fixed pixels */

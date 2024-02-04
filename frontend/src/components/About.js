@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "./Footer";
+import { useLocation } from "react-router-dom";
 
 const About = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+        window.scrollTo(0,0);
+    }
+  , [location])
+  
   return (
-    <div>
-    <div className="mx-auto px-2">
+    <div style={{position: "relative", top: "60px"}}>
+    <div className="mx-auto px-2 my-2">
       <h1 className="text-center mb-4 text-decoration-underline">
         <strong>About Us</strong>
       </h1>

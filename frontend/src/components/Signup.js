@@ -35,10 +35,10 @@ const Signup = (props) => {
       
       localStorage.setItem('Token', res.authToken);
       navigate("/");
-      props.showAlert('Signup Successfull..!!', 'success');
+      props.showAlert('Signup Successfull', 'success');
     }
     else{
-      props.showAlert('Please Enter New Email Address..!!', 'danger');
+      props.showAlert('Please Enter New Email Address', 'danger');
     }
     }
     }
@@ -50,7 +50,7 @@ const Signup = (props) => {
   };
 
   return (
-    <div className="px-2" style={{maxWidth: "auto"}}>
+    <div className="px-2 my-2" style={{maxWidth: "auto", position: "relative", top: "60px"}}>
     <div className="mx-auto pt-1 rounded-4" style={{maxWidth: "400px", maxHeight: "auto" , backgroundColor: "#b9b2b2"}}>
       <h2 className="my-2 text-center">SignUp</h2>
       <hr />

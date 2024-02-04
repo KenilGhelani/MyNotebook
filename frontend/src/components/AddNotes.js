@@ -21,11 +21,11 @@ const AddNotes = (props) => {
 
   return (
     <div>
-      <div className="my-3 py-4 px-2 rounded-4 mx-auto" style={{ maxWidth: "500px", maxHeight: "auto", backgroundColor: "#b9b2b2" }}>
-        <h2 className="mt-2 pb-2 text-center"><strong>Add Your Notes</strong></h2>
+      <div className="mt-2 py-4 px-2 rounded-4 mx-auto" style={{ maxWidth: "500px", maxHeight: "auto", backgroundColor: "#b9b2b2"}}>
+        <h2 className="mt-1 pb-1 text-center"><strong>Add Your Notes</strong></h2>
         <hr />
-        <form className="my-3">
-          <div className="mb-3">
+        <form className="mt-3">
+          <div className="mb-2">
             <label htmlFor="title" className="form-label my-2">
               <h5>Title</h5>
             </label>
@@ -40,7 +40,7 @@ const AddNotes = (props) => {
               required
             />
           </div>
-          <div className="mb-3">
+          <div className="mb-2">
             <label htmlFor="description" className="form-label my-2">
               <h5>Description</h5>
             </label>
@@ -55,7 +55,7 @@ const AddNotes = (props) => {
               required
             />
           </div>
-          <div className="my-3">
+          <div className="mb-2">
             <label htmlFor="tag" className="form-label my-2">
               <h5>Tag</h5>
             </label>
@@ -70,7 +70,7 @@ const AddNotes = (props) => {
               required
             />
           </div>
-          <div className="text-center py-3">
+          <div className="text-center mt-4">
 
           <button
             disabled={note.description.length < 5 ||
