@@ -13,9 +13,10 @@ body::before {
   z-index: -1;
 }
 
-
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+  /* Apply a different background or styles for smaller screens if needed */
   body {
+      background-attachment: scroll; /* Override fixed attachment for small screens */
       background-image: url('./notebook-background-texture-w2bqz0cxkygdfjjs.jpg');
   }
 }
