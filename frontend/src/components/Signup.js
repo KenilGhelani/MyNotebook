@@ -38,7 +38,7 @@ const Signup = (props) => {
       props.showAlert('Signup Successfull', 'success');
     }
     else{
-      props.showAlert('Please Enter New Email Address', 'danger');
+      props.showAlert('User already exists', 'danger');
     }
     }
     }
