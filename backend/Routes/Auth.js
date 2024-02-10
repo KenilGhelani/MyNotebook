@@ -9,8 +9,6 @@ var fetchuser = require("../Middleware/fetchuser");
 require('dotenv').config();
 
 const SecretKey = process.env.SECURITY;
-// const SecretKey = "kdghelaniiii";
-// console.log(SecretKey);
 
 //Route 1 : Create a new user
 router.post(
@@ -51,8 +49,6 @@ router.post(
         email: req.body.email,
         password: secPass,
       });
-      // .then(user => res.json(user))
-      // .catch(err => res.json({Message: err.message}))
       const data = {
         user: {
           id: user.id,
