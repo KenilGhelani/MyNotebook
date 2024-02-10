@@ -3,7 +3,6 @@ require('dotenv').config();
 
 const connetToMongo = async () => {
   const MONGO_URL = process.env.MONGO_URL
-  console.log(MONGO_URL);
   try {
     await mongoose.connect(MONGO_URL, {
       useNewUrlParser: true,
