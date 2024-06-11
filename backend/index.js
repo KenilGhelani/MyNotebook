@@ -11,16 +11,16 @@ app.use(cors({
   origin: 'https://mynotebook-frontend.vercel.app'
 }));
 
-app.get('/api/auth/login', (req, res) => {
-  res.json({ message: 'Login endpoint' });
-});
-
 connectToMongo();
 
 app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Hello Kenil Ghelani!");
+});
+
+app.get('/api/auth/login', (req, res) => {
+  res.json({ message: 'Login endpoint' });
 });
 
 app.use("/api/auth", require("./Routes/Auth"));
