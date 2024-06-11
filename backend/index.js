@@ -5,10 +5,18 @@ var cors = require("cors");
 const app = express();
 const port = 5000;
 
-app.use(
-  cors()
-  );
-  connectToMongo();
+app.use(cors());
+
+app.use(cors({
+  origin: 'https://mynotebook-frontend.vercel.app'
+}));
+
+app.get('/api/auth/login', (req, res) => {
+  res.json({ message: 'Login endpoint' });
+});
+
+connectToMongo();
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
