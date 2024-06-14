@@ -13,8 +13,7 @@ const Login = (props) => {
     const response = await fetch("https://mynotebook-backend.vercel.app/api/auth/login", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
         email: credential.email,
