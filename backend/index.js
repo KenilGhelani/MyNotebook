@@ -7,10 +7,6 @@ const port = 5000;
 
 app.use(cors());
 
-app.use(cors({
-  origin: 'https://mynotebook-frontend.vercel.app'
-}));
-
 connectToMongo();
 
 app.use(express.json());
