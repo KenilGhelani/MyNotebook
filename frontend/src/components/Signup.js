@@ -19,7 +19,8 @@ const Signup = (props) => {
       const response = await fetch("https://mynotebook-backend.vercel.app/api/auth/createuser", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify({
         name: user.name,
