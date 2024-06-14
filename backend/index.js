@@ -15,10 +15,6 @@ app.get("/", (req, res) => {
   res.send("Hello Kenil Ghelani!");
 });
 
-app.get('/api/auth/login', (req, res) => {
-  res.json({ message: 'Login endpoint' });
-});
-
 app.use("/api/auth", require("./Routes/Auth"));
 app.use("/api/notes", require("./Routes/Notes"));
 
