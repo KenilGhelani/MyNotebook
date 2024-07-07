@@ -9,11 +9,13 @@ const port = 5000;
 connectToMongo();
 
 //Middleware
-app.use(cors({
-  origin: 'https://mynotebook-frontend.vercel.app',
-  methods: ['GET', 'POST'],
-  allowedHeaders: ['Content-Type'],
-}));
+const corsOptions = {
+  origin: 'https://mynotebook-frontend-a61z7sz0w-kenil-ghelanis-projects.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 //Routes
