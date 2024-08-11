@@ -8,7 +8,14 @@ const port = 5000;
 //Connect to Mongo
 connectToMongo();
 
-app.use(cors());
+//Middleware
+const corsOptions = {
+  origin: 'https://mynotebook-frontend.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 //Routes
