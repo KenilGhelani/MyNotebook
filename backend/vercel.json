@@ -1,11 +1,17 @@
 {
   "routes": [
     {
-      "src": "/api/auth/login",
-      "methods": ["POST"],
-      "dest": "https://mynotebook-backend.vercel.app/api/auth/login",
+      "src": "/api/auth/(.*)",
+      "dest": "https://mynotebook-backend.vercel.app/api/auth/$1",
       "headers": {
-        "Access-Control-Allow-Origin": "https://mynotebook-frontend.vercel.app"
+        "Access-Control-Allow-Origin": "https://mynotebook-frontend-3eag6eamb-kenil-ghelanis-projects.vercel.app"
+      }
+    },
+    {
+      "src": "/api/notes/(.*)",
+      "dest": "https://mynotebook-backend.vercel.app/api/notes/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "https://mynotebook-frontend-3eag6eamb-kenil-ghelanis-projects.vercel.app"
       }
     }
   ]
