@@ -12,7 +12,8 @@ connectToMongo();
 const corsOptions = {
   origin: 'https://mynotebook-frontend.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
+  Credentials: true
 };
 
 app.use(cors(corsOptions));
